@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: normal;
+  background-image: linear-gradient(120deg, #e2c35d, #d88771);
+  color: white;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form input,
+form button {
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  border: none;
+  background-color: white;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+form button {
+  color: #d88771;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+form button:hover {
+  background-color: #d88771;
+  color: white;
+}
+
+form .select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+form .select::after {
+  content: '\25BC';
+  position: absolute;
+  background-color: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+form .select:hover::after {
+  background-color: white;
+  color: #ff6f47;
+}
+
+form .select select {
+  text-transform: capitalize;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  color: #ff6f47;
+  width: 10rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.todo-contener {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-contener .todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo-contener .todo-list .todo {
+  margin: .5rem;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  border-radius: 5px;
+}
+
+.todo-contener .todo-list .todo .todo-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: .5rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.todo-contener .todo-list .todo .complete-btn,
+.todo-contener .todo-list .todo .trash-btn {
+  background-color: #ff6f47;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1rem;
+  outline: none;
+}
+
+.todo-contener .todo-list .todo .complete-btn i,
+.todo-contener .todo-list .todo .trash-btn i {
+  pointer-events: none;
+}
+
+.todo-contener .todo-list .todo .complete-btn {
+  background-color: #49cc49;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: .5;
+}
+
+.fall {
+  -webkit-transform: translateY(8rem) rotateZ(20deg);
+          transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */

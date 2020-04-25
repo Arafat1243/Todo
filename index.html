@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="plugins.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="fontawsome/plugins.js" defer></script> -->
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <form>
+        <input type="text" class="todo-input" autocomplete="off">
+        <button class="todo-btn" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">completed</option>
+                <option value="uncompleted">uncompleted</option>
+            </select>
+        </div>
+    </form>
+    <div class="todo-contener">
+        <ul class="todo-list">
+
+        </ul>
+    </div>
+</body>
+
+</html>
